@@ -24,3 +24,106 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.match-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh; 
+  background-color: palegoldenrod; /* Lighter background for the whole page */
+}
+
+.match-card {
+  background-color: yellow; /* Softer background color */
+  color: #333333; /* Darker text color for better readability */
+  padding: 20px;
+  width: 80%;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Slightly deeper shadow for a pop effect */
+  border-radius: 10px; /* Rounded corners */
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.match-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #202020; /* Slightly darker for emphasis */
+}
+
+.match-info {
+  font-size: 1.2rem;
+  color: #555; /* Darker grey for better readability */
+}
+
+.comments-section {
+  width: 80%;
+  max-width: 800px;
+  margin-top: 20px;
+}
+
+.comments-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: red; /* Coral color for the comment titles */
+  
+}
+
+.comments-list {
+  max-height: 300px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+
+.comment {
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  color: #6c757d; /* Softer text color for comments */
+}
+
+.comment p {
+  font-size: 1rem;
+  color: black; /* Dark color for better readability */
+}
+
+.comment small {
+  font-size: 0.8rem;
+  color: #6c757d; /* Matching text color for metadata */
+}
+
+.comment-input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.comment-input {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #007BFF; /* Ensure input text is visible */
+}
+
+.submit-button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
